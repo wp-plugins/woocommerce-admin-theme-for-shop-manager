@@ -1158,7 +1158,7 @@ function wooadmin_abc(){
 
 
 
-   $admin_title = spriwooadmin_ntf( __( '%1$s &lsaquo; %2$s &#8212;' ),get_admin_page_title() , $admin_title );
+   $admin_title = sprintf( __( '%1$s &lsaquo; %2$s &#8212;' ),get_admin_page_title() , $admin_title );
 
    $admint = sprintf( __( '%1$s &lsaquo; %2$s &#8212;eshopbox' ),get_bloginfo( 'name' ) , $admin_title );
 
