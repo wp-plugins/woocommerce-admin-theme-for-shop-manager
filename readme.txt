@@ -1,7 +1,7 @@
-=== Woocommerce Admin Theme ===
+﻿=== Woocommerce Admin Theme ===
 Contributors: http://profiles.wordpress.org/singhbalram786
 Donate link: http://balramsingh.in/
-Tags: woocommerce, woocommerce admin theme, woocommerce admin panel, woocommerce shop manager dashboard, woocommerce custom dashboard, hide wordpress from theme, hide woocommerce from theme, hide woocommerce from Online Store.
+Tags: woocommerce, woocommerce admin theme, woocommerce admin panel, woocommerce shop manager dashboard, woocommerce custom dashboard, hide wordpress from theme, hide woocommerce from theme, hide woocommerce from Online Store, My Admin Theme, Admin Theme, WooCommerce Admin Bar Addition, WooCommerce Admin Bar, Balram Singh, http://balramsingh.in, Simplify Admin Panel, Admin Page Framework.
 Requires at least: 3.0.1
 Tested up to: 3.6
 Stable tag: 4.3
