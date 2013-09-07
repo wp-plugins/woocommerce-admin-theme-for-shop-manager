@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Woocommerce Admin Theme
-Plugin URI: http://woocommerce.balramsingh.in
-Description: Wordpress Admin Theme By eshopbox.com. just activate to use this admin template
+Plugin URI: http://wordpress.org/plugins/woocommerce-admin-theme-for-shop-manager/
+Description: Wordpress Admin Theme to integrate Shop Manager / Merchant Environment. just activate to use this Admin Template.
 Author: Balram Singh
 Version: 1.0
-Author URI: http://eshopbox.com
+Author URI: http://balramsingh.in
 */
 
 
@@ -104,7 +104,7 @@ function wooadmin_eshop_header_right_menus()
             $('#wp-admin-bar-top-secondary').each(function()
             {
                 old_value = $(this).html();
-                $(this).html( '<li id="wp-admin-bar-logout" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo wp_logout_url( home_url() ); ?>/wp-admin" title="Logout"><span class="ab-logout ab-icon icon"></span>Logout</a></li>          <li id="wp-admin-bar-settings" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo site_url(); ?>/wp-admin/admin.php?page=cat_settings"><span class="ab-settings ab-icon icon"></span>Settings</a></li><li id="wp-admin-bar-messages" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo site_url(); ?>/wp-admin/edit-comments.php"><span class="ab-message ab-icon icon"></span>Messages</a></li>');
+                $(this).html( '<li id="wp-admin-bar-logout" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo wp_logout_url( home_url() ); ?>/wp-admin" title="Logout"><span class="ab-logout ab-icon icon"></span>Logout</a></li>          <li id="wp-admin-bar-settings" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo site_url(); ?>/wp-admin/admin.php?page=woocommerce_settings"><span class="ab-settings ab-icon icon"></span>Settings</a></li><li id="wp-admin-bar-messages" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo site_url(); ?>/wp-admin/edit-comments.php"><span class="ab-message ab-icon icon"></span>Messages</a></li>');
             });
             $('#add-new-user').each(function()
             {
@@ -148,11 +148,11 @@ function wooadmin_eshop_header_right_menus()
 // CUSTOMIZE ADMIN MENU ORDER
 
 //Replaces wp-admin menu item names
-   // echo admin_url()."admin.php?page=cat_reports";
+   // echo admin_url()."admin.php?page=woocommerce_reports";
    if ( isset($_GET['page']) ) {
     $plugin_page = stripslashes($_GET['page']);
     //echo $plugin_page;
-   if($plugin_page=='cat_reports' && $plugin_page=='woocommerce_reports'){
+   if($plugin_page=='woocommerce_reports' && $plugin_page=='woocommerce_reports'){
     //echo $plugin_page;
    }}
    else{
@@ -560,7 +560,7 @@ function wooadmin_dasboard_sub_menu() {
 
     $menu[57] = array( '', 'read', 'separator5', '', 'wp-menu-separator4' );
 
-    $submenu[ 'index.php' ][1] = array( __('Reports'), 'read', 'admin.php?page=cat_reports' );
+    $submenu[ 'index.php' ][1] = array( __('Reports'), 'read', 'admin.php?page=woocommerce_reports' );
 
 }  
 
@@ -989,7 +989,7 @@ function wooadmin_change_post_to_article1( $translated )
 
 function wooadmin_remove_menus () {
 
-if($_GET['page']!='cat_settings' && $_GET['page']!='woocommerce_settings'){    // echo 'test';
+if($_GET['page']!='woocommerce_settings' && $_GET['page']!='woocommerce_settings'){    // echo 'test';
 }
 
 else{
@@ -1100,7 +1100,7 @@ else{
 
     remove_submenu_page( 'edit.php?post_type=shop_order', 'edit.php?post_type=shop_order' );
 
-    remove_submenu_page( 'edit.php?post_type=shop_order', 'cat_reports' );
+    remove_submenu_page( 'edit.php?post_type=shop_order', 'woocommerce_reports' );
 
     remove_submenu_page( 'edit.php?post_type=shop_order', 'edit.php?post_type=shop_coupon' );
 
@@ -1112,7 +1112,7 @@ else{
 
     remove_submenu_page( 'index.php', 'index.php' );
 
-    remove_submenu_page( 'index.php', 'admin.php?page=cat_reports' );
+    remove_submenu_page( 'index.php', 'admin.php?page=woocommerce_reports' );
 
 
 
@@ -1124,25 +1124,25 @@ else{
 
     $menu[100] = array( __('Back to Dashboard'), 'read', 'index.php', '', 'menu-top menu-top-first back_to', '', 'none' );
 
-    $menu[6] = array( __('General'), 'read', 'admin.php?page=cat_settings&tab=general', '', 'menu-top menu-top-first menu-icon-dashboard', 'menu-dashboard', 'none' );
+    $menu[6] = array( __('General'), 'read', 'admin.php?page=woocommerce_settings&tab=general', '', 'menu-top menu-top-first menu-icon-dashboard', 'menu-dashboard', 'none' );
 
-    $menu[7] = array( __('Catalogue'), 'read', 'admin.php?page=cat_settings&tab=catalog', '', 'menu-top menu-top-first menu-icon-catalogue', 'menu-dashboard', 'none' );
+    $menu[7] = array( __('Catalogue'), 'read', 'admin.php?page=woocommerce_settings&tab=catalog', '', 'menu-top menu-top-first menu-icon-catalogue', 'menu-dashboard', 'none' );
 
-    //$menu[8] = array( __('Pages'), 'read', 'admin.php?page=cat_settings&tab=pages', '', 'menu-top menu-top-first menu-icon-page', 'menu-dashboard', 'none' );
+    //$menu[8] = array( __('Pages'), 'read', 'admin.php?page=woocommerce_settings&tab=pages', '', 'menu-top menu-top-first menu-icon-page', 'menu-dashboard', 'none' );
 
 
 
-    $menu[9] = array( __('Inventory'), 'read', 'admin.php?page=cat_settings&tab=inventory', '', 'menu-top menu-top-first menu-icon-post', 'menu-dashboard', 'none' );
+    $menu[9] = array( __('Inventory'), 'read', 'admin.php?page=woocommerce_settings&tab=inventory', '', 'menu-top menu-top-first menu-icon-post', 'menu-dashboard', 'none' );
 
-    $menu[19] = array( __('Tax'), 'read', 'admin.php?page=cat_settings&tab=tax', '', 'menu-top menu-top-first menu-icon-tax', 'menu-dashboard', 'none' );
+    $menu[19] = array( __('Tax'), 'read', 'admin.php?page=woocommerce_settings&tab=tax', '', 'menu-top menu-top-first menu-icon-tax', 'menu-dashboard', 'none' );
 
-    $menu[40] = array( __('Shipping'), 'read', 'admin.php?page=cat_settings&tab=shipping', '', 'menu-top menu-top-first menu-icon-shipping', 'menu-dashboard', 'none' );
+    $menu[40] = array( __('Shipping'), 'read', 'admin.php?page=woocommerce_settings&tab=shipping', '', 'menu-top menu-top-first menu-icon-shipping', 'menu-dashboard', 'none' );
 
-    $menu[41] = array( __('Payment Gateways'), 'read', 'admin.php?page=cat_settings&tab=payment_gateways', '', 'menu-top menu-top-first menu-icon-payment', 'menu-dashboard', 'none' );
+    $menu[41] = array( __('Payment Gateways'), 'read', 'admin.php?page=woocommerce_settings&tab=payment_gateways', '', 'menu-top menu-top-first menu-icon-payment', 'menu-dashboard', 'none' );
 
-    $menu[42] = array( __('Emails'), 'read', 'admin.php?page=cat_settings&tab=email', '', 'menu-top menu-top-first menu-icon-mail', 'menu-dashboard', 'none' );
+    $menu[42] = array( __('Emails'), 'read', 'admin.php?page=woocommerce_settings&tab=email', '', 'menu-top menu-top-first menu-icon-mail', 'menu-dashboard', 'none' );
 
-    $menu[43] = array( __('Integration'), 'read', 'admin.php?page=cat_settings&tab=integration', '', 'menu-top menu-top-first menu-icon-integration', 'menu-dashboard', 'none' );
+    $menu[43] = array( __('Integration'), 'read', 'admin.php?page=woocommerce_settings&tab=integration', '', 'menu-top menu-top-first menu-icon-integration', 'menu-dashboard', 'none' );
 
     $menu[44] = array( __('PIP Settings'), 'read', 'admin.php?page=woocommerce_pip', '', 'menu-top menu-top-first menu-icon-integration', 'menu-dash', 'none' );
 
