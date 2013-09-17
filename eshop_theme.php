@@ -294,7 +294,7 @@ function wooadmin_eshop_seperator_text()
 
 // Rename Users to Customers
 
-function wooadmin_renameuser() {  
+function wooadmin_renameuser1() {  
 
     global $menu;  
 
@@ -318,7 +318,7 @@ function wooadmin_renameuser() {
 
 }  
 
-add_action( 'admin_menu', 'wooadmin_renameuser' );  
+add_action( 'admin_menu', 'wooadmin_renameuser1' );  
 
 // Rename Users to Customers
 

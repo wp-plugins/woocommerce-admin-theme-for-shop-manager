@@ -1,7 +1,7 @@
 ﻿=== Woocommerce Admin Theme ===
 Contributors: http://profiles.wordpress.org/singhbalram786
 Donate link: http://balramsingh.in/
-Tags: woocommerce, woocommerce admin theme, woocommerce admin panel, woocommerce shop manager dashboard, woocommerce custom dashboard, hide wordpress from theme, hide woocommerce from theme, hide woocommerce from Online Store, My Admin Theme, Admin Theme, WooCommerce Admin Bar Addition, WooCommerce Admin Bar, Balram Singh, http://balramsingh.in, Simplify Admin Panel, Admin Page Framework, Wordpress admin Panel, admin, Anuj Sachan.
+Tags: woocommerce, woocommerce admin theme, woocommerce admin panel, woocommerce shop manager dashboard, woocommerce custom dashboard, hide wordpress from theme, hide woocommerce from theme, hide woocommerce from Online Store, My Admin Theme, Admin Theme, WooCommerce Admin Bar Addition, WooCommerce Admin Bar, Balram Singh, http://balramsingh.in, Simplify Admin Panel, Admin Page Framework, Wordpress admin Panel, admin, Anuj Sachan, Balram Admin Theme, Balram Singh Admin Theme, admin, plugin, widget.
 Requires at least: 3.0.1
 Tested up to: 3.6
 Stable tag: 4.3
@@ -13,14 +13,13 @@ Woocommerce Admin Panel for Shop Manager || Hide woocommerce and wordpress from 
 == Description ==
 Woocommerce Admin Panel for Shop Manager
 Hide woocommerce and wordpress from Shop Manager.
-<br/>
-<br/>
 
-Requirement: User Role Plugin<br/>
-http://wordpress.org/plugins/user-role-editor/<br />
-<br/>
 
-The current features are as follows:<br />
+Requirement: User Role Plugin
+http://wordpress.org/plugins/user-role-editor/
+
+
+The current features are as follows:
 1. Enqued a Custom style sheet for Wordpress dashboard which is easy to be customized by the requirement.<br />
 2. Footer Left text (Thanks Text) and Footer Right Text (version text) is added.<br />
 3. Added a button in header left to "Visit Site".<br />
@@ -145,8 +144,8 @@ A very beautiful design is ready to attract Shop Manager.
 
 == Screenshots ==
 
-1. /assets/screenshot-1.jpg
-2. /assets/screenshot-2.jpg
+1. /assets/screenshot-1.JPG
+2. /assets/screenshot-2.JPG
 
 == Changelog ==
 
@@ -154,8 +153,7 @@ A very beautiful design is ready to attract Shop Manager.
 * A change since the previous version.
 * Another change.
 
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
+\
 
 == Upgrade Notice ==
 
@@ -194,4 +192,4 @@ Titles are optional, naturally.
 Markdown uses email style notation for blockquotes and I've been told:
 > Asterisks for *emphasis*. Double it up  for **strong**.
 
-`<?php code(); // goes in backticks ?>`
+`<?php echo "http://balramsingh.in" ?>`
