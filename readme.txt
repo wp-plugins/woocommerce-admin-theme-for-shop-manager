@@ -144,8 +144,8 @@ A very beautiful design is ready to attract Shop Manager.
 
 == Screenshots ==
 
-1. /assets/screenshot-1.JPG
-2. /assets/screenshot-2.JPG
+1. /assets/screenshot-1.PNG
+2. /assets/screenshot-2.png
 
 == Changelog ==
 
