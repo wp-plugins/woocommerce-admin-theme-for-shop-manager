@@ -1,9 +1,9 @@
 ﻿=== Woocommerce Admin Theme ===
 Contributors: http://profiles.wordpress.org/singhbalram786
 Donate link: http://balramsingh.in/
-Tags: woocommerce, woocommerce admin theme, woocommerce admin panel, woocommerce shop manager dashboard, woocommerce custom dashboard, hide wordpress from theme, hide woocommerce from theme, hide woocommerce from Online Store, My Admin Theme, Admin Theme, WooCommerce Admin Bar Addition, WooCommerce Admin Bar, Balram Singh, http://balramsingh.in, Simplify Admin Panel, Admin Page Framework, Wordpress admin Panel, admin, Anuj Sachan, Balram Admin Theme, Balram Singh Admin Theme, admin, plugin, widget.
+Tags: woocommerce, woocommerce admin theme, woocommerce admin panel, woocommerce shop manager dashboard, woocommerce custom dashboard, hide wordpress from theme, hide woocommerce from theme, hide woocommerce from Online Store, My Admin Theme, Admin Theme, WooCommerce Admin Bar Addition, WooCommerce Admin Bar, Balram Singh, http://balramsingh.in, Simplify Admin Panel, Admin Page Framework, Wordpress admin Panel, admin, Anuj Sachan, Balram Admin Theme, Balram Singh Admin Theme, admin, plugin, widget, Disable Admin Bar and ToolBar, Disable Admin Bar, Admin Bar Addition, Woocommerce Admin Bar Addition, Wordpress Admin Bar Addition, Custom Menu, Disable Admin Bar Removal, Wp My Admin Bar, Enhanced Admin Bar.
 Requires at least: 3.0.1
-Tested up to: 3.6
+Tested up to: 3.6.1
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -156,6 +156,9 @@ A very beautiful design is ready to attract Shop Manager.
 \
 
 == Upgrade Notice ==
+
+= 1.1 =
+Removed a bug in Settings link in top right corner.
 
 = 1.0 =
 Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.

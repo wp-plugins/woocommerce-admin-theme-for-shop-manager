@@ -383,8 +383,6 @@ margin-left: -1px !important;
 width: 125px;
 height: 27px;
 position: relative;
-top: 21px;
-left: 15px;
 }
 #wp-admin-bar-wp-logo.hover{
 	background-position: 0 0;
@@ -782,7 +780,7 @@ background-repeat: no-repeat;
 display: none;
 }
 .login #login h1 a {
-background-image: url(img/eshopbox-logo.png)!important;
+background-image: url(img/eshopbox-logo.png);
 text-indent: -9999px;
 outline: 0;
 overflow: hidden;

@@ -8,7 +8,6 @@ Version: 1.0
 Author URI: http://balramsingh.in
 */
 
-
 // TO enque custom style sheet for admin Panel
 function wooadmin_my_admin_theme_style() {
     wp_enqueue_style('my-admin-theme', plugins_url('wp-admin.css', __FILE__));
@@ -20,12 +19,12 @@ add_action('login_enqueue_scripts', 'wooadmin_my_admin_theme_style');
 // For Footer content change
 add_filter('admin_footer_text', 'wooadmin_left_admin_footer_text_output', 11); //left side
 function wooadmin_left_admin_footer_text_output($text) {
-    $text = 'Thank you for creating with <a href="http://eshopbox.com/">Eshopbox</a>';
+    $text = bloginfo('name').' Admin Panel';
     return $text;
 }
 add_filter('update_footer', 'wooadmin_right_admin_footer_text_output', 11); //right side
 function wooadmin_right_admin_footer_text_output($text) {
-    $text = 'Version 2.0';
+    $text = 'Version 1.0';
     return $text;
 }
 // For Footer content change
@@ -77,6 +76,14 @@ function wooadmin_eshopbox_admin_bar() {
  add_action( 'admin_head', 'wooadmin_eshop_admin_logo' );
 function wooadmin_eshop_admin_logo()
 {   
+     if( function_exists('get_custom_header') ){
+        $width = get_custom_header()->width;
+        $height = get_custom_header()->height;
+    } else {
+        $width = HEADER_IMAGE_WIDTH;
+        $height = HEADER_IMAGE_HEIGHT;
+    }
+
     ?>
     <script type="text/javascript">
         jQuery(document).ready(function($) 
@@ -84,7 +91,7 @@ function wooadmin_eshop_admin_logo()
             $('#wp-admin-bar-wp-logo').each(function()
             {
                 old_value = $(this).html();
-                $(this).html( '<a class="ab-item" aria-haspopup="true" href="<?php echo site_url(); ?>/wp-admin" title="Go to Eshopbox"><span class="ab-icon"></span></a>');
+                $(this).html( '<a class="ab-item" aria-haspopup="true" href="<?php echo site_url(); ?>/wp-admin" title="<?php echo bloginfo('name'); ?>"><span class="ab-icon" style="background-image:url(<?php echo header_image(); ?>)!important;width:<?php echo $width ?>px;height:<?php echo $height; ?>px;"></span></a>');
             });
         });
     </script>
@@ -148,7 +155,7 @@ function wooadmin_eshop_header_right_menus()
 // CUSTOMIZE ADMIN MENU ORDER
 
 //Replaces wp-admin menu item names
-   // echo admin_url()."admin.php?page=woocommerce_reports";
+   // echo admin_url()."admin.php?page=cat_reports";
    if ( isset($_GET['page']) ) {
     $plugin_page = stripslashes($_GET['page']);
     //echo $plugin_page;
@@ -159,8 +166,9 @@ function wooadmin_eshop_header_right_menus()
 add_filter('gettext', 'wooadmin_rename_admin_menu_items');
 add_filter('ngettext', 'wooadmin_rename_admin_menu_items');
 function wooadmin_rename_admin_menu_items( $menu ) {
+    // $dxsitename = bloginfo('name');
     // $menu = str_ireplace( 'original name', 'new name', $menu );
-    $menu = str_ireplace( 'Woocommerce', 'Eshopbox', $menu );
+    $menu = str_ireplace( 'Woocommerce', 'My Shop', $menu );
     // return $menu array
     return $menu;
 }
@@ -198,17 +206,17 @@ function wooadmin_eshop_seperator_text()
             $('.wp-menu-separator4').each(function()
             {
                 old_value = $(this).html();
-                $(this).html( '<div class="seperator_text">Eshopbox Extend</div><div class="separator"></div>');
+                $(this).html( '<div class="seperator_text">My Shop Extend</div><div class="separator"></div>');
             });
             $('.users-php #username').each(function()
             {
                 old_value = $(this).html();
-                 $(this).html( '<a href="<?php echo home_url(); ?>/wp-admin/users.php?orderby=login&amp;order=asc"><span>Email</span><span class="sorting-indicator"></span></a>');
+                 $(this).html( '<a href="http://localhost/storeadmin/eshopbox/wp-admin/users.php?orderby=login&amp;order=asc"><span>Email</span><span class="sorting-indicator"></span></a>');
             });
             $('.users-php .manage-column.column-username.sortable.desc').each(function()
             {
                 old_value = $(this).html();
-                 $(this).html( '<a href="<?php echo home_url(); ?>/wp-admin/users.php?orderby=login&amp;order=asc"><span>Email</span><span class="sorting-indicator"></span></a>');
+                 $(this).html( '<a href="http://localhost/storeadmin/eshopbox/wp-admin/users.php?orderby=login&amp;order=asc"><span>Email</span><span class="sorting-indicator"></span></a>');
             });
             $('#toplevel_page_woocommerce').each(function()
             {
@@ -294,7 +302,7 @@ function wooadmin_eshop_seperator_text()
 
 // Rename Users to Customers
 
-function wooadmin_renameuser1() {  
+function wooadmin_renameuser() {  
 
     global $menu;  
 
@@ -318,7 +326,7 @@ function wooadmin_renameuser1() {
 
 }  
 
-add_action( 'admin_menu', 'wooadmin_renameuser1' );  
+add_action( 'admin_menu', 'wooadmin_renameuser' );  
 
 // Rename Users to Customers
 
@@ -1160,19 +1168,19 @@ function wooadmin_abc(){
 
    $admin_title = sprintf( __( '%1$s &lsaquo; %2$s &#8212;' ),get_admin_page_title() , $admin_title );
 
-   $admint = sprintf( __( '%1$s &lsaquo; %2$s &#8212;eshopbox' ),get_bloginfo( 'name' ) , $admin_title );
+   $admint = sprintf( __( '%1$s &lsaquo; %2$s &#8212;My Shop' ),get_bloginfo( 'name' ) , $admin_title );
 
-  // $admint = sprintf( __( '%1$s &lsaquo; %2$s &#8212;eshopbox' ), $admin_title, $admin_title );
+  // $admint = sprintf( __( '%1$s &lsaquo; %2$s &#8212;My Shop' ), $admin_title, $admin_title );
 
    $title = get_admin_page_title();
 
    $title = esc_html( strip_tags( $title ) );
 
-  //  $admin_title = sprintf( __( '%1$s &#8212; eshopbox' ), $title );
+  //  $admin_title = sprintf( __( '%1$s &#8212; My Shop' ), $title );
 
     $admin_title = get_bloginfo( 'name' );
 
- $admint = sprintf( __( '%1$s &lsaquo; %2$s &#8212; eshopbox' ), $title, $admin_title );
+ $admint = sprintf( __( '%1$s &lsaquo; %2$s &#8212; My Shop' ), $title, $admin_title );
 
    return  $admint ;
 
@@ -1306,7 +1314,7 @@ add_filter( 'get_user_option_screen_layout_dashboard', 'wooadmin_so_screen_layou
 */
 remove_action('admin_menu', 'woocommerce_admin_menu_after', 50);
 function wooadmin_woocommerce_admin_menu_after1() {
-    $settings_page = add_submenu_page( 'woocommerce', __( 'Eshopbox Settings Page', 'woocommerce' ),  __( 'Settings', 'woocommerce' ) , 'manage_woocommerce', 'woocommerce_settings', 'woocommerce_settings_page');
+    $settings_page = add_submenu_page( 'woocommerce', __( 'My Shop Settings Page', 'woocommerce' ),  __( 'Settings', 'woocommerce' ) , 'manage_woocommerce', 'woocommerce_settings', 'woocommerce_settings_page');
     $status_page = add_submenu_page( 'woocommerce', __( 'WooCommerce Status', 'woocommerce' ),  __( 'System Status', 'woocommerce' ) , 'manage_woocommerce', 'woocommerce_status', 'woocommerce_status_page');
 
     add_action( 'load-' . $settings_page, 'woocommerce_settings_page_init' );
@@ -1346,7 +1354,7 @@ function wooadmin_namespace_login_headertitle( $title ) {
 
 
 // to change admin theme logo by the website logo
-//add_action( 'login_head', 'wooadmin_namespace_login_style' );
+add_action( 'login_head', 'wooadmin_namespace_login_style1' );
 function wooadmin_namespace_login_style1() {
     if( function_exists('get_custom_header') ){
         $width = get_custom_header()->width;
