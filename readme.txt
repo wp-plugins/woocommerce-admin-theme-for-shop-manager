@@ -122,7 +122,7 @@ These are the few points which are covered till now. Hope for few More Features.
 
 This section describes how to install the plugin and get it working.
 
-1. Upload `eshop_theme.php` to the `/wp-content/plugins/` directory
+1. Upload `plugin folder` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Your Admin Theme is ready
 4. For Better use also download http://wordpress.org/plugins/user-role-editor/ to set Shop Manager Account.
@@ -155,6 +155,9 @@ A very beautiful design is ready to attract Shop Manager.
 \
 
 == Upgrade Notice ==
+
+= 2.0 =
+* Login Sceen shows logo of the website.
 
 = 1.1 =
 Removed a bug in Settings link in top right corner.
