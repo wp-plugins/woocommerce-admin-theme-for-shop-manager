@@ -10,7 +10,7 @@ padding: 0;
 position: absolute;
 }
 #adminmenuback, #adminmenuwrap, #adminmenu, #adminmenu .wp-submenu {
-width: 220px;
+width: 220px
 }
 #wpcontent, #wpfooter {
 margin-left: 220px;
