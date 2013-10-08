@@ -53,16 +53,16 @@ Media<br />
 Post / Blog - Renamed as Blog<br />
 Link<br />
 Seperator4 - Website Design<br />
-Widgets - Widget Page (All the widgets are renamed from woocommerce to Eshopbox)<br />
+Widgets - Widget Page (All the widgets are renamed from woocommerce to My Shop)<br />
 Menus - All the menus used in the Website<br />
 Header - Change Logo Image<br />
 Background - Change Backgorund Color of  the website.<br />
-Seperato5 - Eshopbox Extend<br />
+Seperato5 - My Shop Extend<br />
 List Of Plugins
 
 Note: Seperators are not clickable.
 
-7.   All the Existance of woocommerce is replaced with Eshopbox.
+7.   All the Existance of woocommerce is replaced with My Shop.
 8. Header Right Menu Settings Button redirects to woocommerce settings page where all the main menus are replaced with the sub menus of Woocommerce Settings.
 Back to Dashboard - Link for main dashboard
 General - Woocommerce Settings Page
@@ -101,7 +101,7 @@ Integration - Woocommerce Settings Page Integration Tab
 
 22. Relpaced customer from users heading and title.
 
-23. Title of All the Pages in Dashboard includes wordpress that is completely removed and replaced by eshopbox.
+23. Title of All the Pages in Dashboard includes wordpress that is completely removed and replaced by My Shop.
 
 24. WpAdmin Bar Top Strip is not shown when the ShopManager is loggedin.
 
