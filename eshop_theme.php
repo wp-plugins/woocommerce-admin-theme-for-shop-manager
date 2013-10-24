@@ -186,7 +186,7 @@ function wooadmin_eshop_seperator_text()
             $('.wp-menu-separator').each(function()
             {
                 old_value = $(this).html();
-                $(this).html( '<div class="seperator_text">Commerce Management</div><div class="separator"></div>');
+                $(this).html( '<div class="seperator_text">eCommerce Management</div><div class="separator"></div>');
             });
             $('.wp-menu-separator1').each(function()
             {
