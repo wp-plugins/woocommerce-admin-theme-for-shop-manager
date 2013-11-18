@@ -124,10 +124,11 @@ These are the few points which are covered till now. Hope for few More Features.
 
 This section describes how to install the plugin and get it working.
 
-1. Upload `plugin folder` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Your Admin Theme is ready
+1. Upload `plugin folder` to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Your Admin Theme is ready to use.
 4. For Better use also download http://wordpress.org/plugins/user-role-editor/ to set Shop Manager Account.
+5. Do not forget to upload header image to enjoy plugin.
 
 == Frequently Asked Questions ==
 
@@ -178,25 +179,6 @@ plugins where more information needs to be conveyed that doesn't fit into the ca
 
 == A brief Markdown Example ==
 
-Ordered list:
 
-1. Some feature
-1. Another feature
-1. Something else about the plugin
+This Plugin is totally based on User Interface, This doesn't effect any of the woocommerce or wordpress functionality.
 
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php echo "http://balramsingh.in" ?>`
