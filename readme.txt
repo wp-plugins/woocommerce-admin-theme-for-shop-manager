@@ -15,6 +15,8 @@ Woocommerce Admin Panel for Shop Manager
 Hide woocommerce and wordpress from Shop Manager.
 
 
+Do not forget to upload header image for better use.
+
 Requirement: User Role Plugin
 http://wordpress.org/plugins/user-role-editor/
 
