@@ -149,6 +149,10 @@ A very beautiful design is ready to attract Shop Manager.
 
 Go to Header, Upload Header Image and the bug is resolved.
 
+= Any More Issue =
+Solution: singhbalram786@gmail.com
+
+
 == Screenshots ==
 
 1. /assets/screenshot-1.PNG
