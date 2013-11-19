@@ -145,6 +145,10 @@ Use this plugin to set preveliges for Shop Manager
 
 A very beautiful design is ready to attract Shop Manager.
 
+== Getting a href link in all the page body after activation of the plugin?
+
+Go to Header, Upload Header Image and the bug is resolved.
+
 == Screenshots ==
 
 1. /assets/screenshot-1.PNG
