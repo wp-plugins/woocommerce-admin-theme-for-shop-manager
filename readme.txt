@@ -177,8 +177,6 @@ Upgrade notices describe the reason a user should upgrade.  No more than 300 cha
 = 0.5 =
 This version fixes a security related bug.  Upgrade immediately.
 
-
-
 == A brief Markdown Example ==
 
 
