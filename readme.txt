@@ -60,7 +60,6 @@ Menus - All the menus used in the Website<br />
 Header - Change Logo Image<br />
 Background - Change Backgorund Color of  the website.<br />
 Seperato5 - My Shop Extend<br />
-List Of Plugins
 
 Note: Seperators are not clickable.
 
@@ -163,7 +162,6 @@ Solution: singhbalram786@gmail.com
 = 2.0 =
 * Login Sceen shows logo of the website.
 
-\
 
 == Upgrade Notice ==
 
