@@ -39,7 +39,7 @@ function wooadmin_wrap_menu_div_wpse_19814()
         {    
             $('#wp-admin-bar-site-name').each(function()
             {
-                $(this).html( '<a class="ab-item" class="visit_site" aria-haspopup="true" target="_blank" href="<?php echo home_url(); ?>"><span class="ab-icon icon"></span>Visit Website</a>' );
+                $(this).html( '<a class="ab-item balram-singh" class="visit_site" aria-haspopup="true" target="_blank" href="<?php echo home_url(); ?>"><span class="ab-icon icon"></span>Visit Website</a>' );
             });
              $('#wp-admin-bar-comments, #wp-admin-bar-new-content').each(function()
             {
