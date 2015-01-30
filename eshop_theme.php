@@ -111,7 +111,7 @@ function wooadmin_eshop_header_right_menus()
             $('#wp-admin-bar-top-secondary').each(function()
             {
                 old_value = $(this).html();
-                $(this).html( '<li id="wp-admin-bar-logout" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo wp_logout_url( home_url() ); ?>/wp-admin" title="Logout"><span class="ab-logout ab-icon icon"></span>Logout</a></li>          <li id="wp-admin-bar-settings" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo site_url(); ?>/wp-admin/admin.php?page=woocommerce_settings"><span class="ab-settings ab-icon icon"></span>Settings</a></li><li id="wp-admin-bar-messages" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo site_url(); ?>/wp-admin/edit-comments.php"><span class="ab-message ab-icon icon"></span>Messages</a></li>');
+                $(this).html( '<li id="wp-admin-bar-logout" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo wp_logout_url( home_url() ); ?>/wp-admin" title="Logout"><span class="ab-logout ab-icon icon"></span>Logout</a></li>          <li id="wp-admin-bar-settings" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo site_url(); ?>/wp-admin/admin.php?page=wc-settings"><span class="ab-settings ab-icon icon"></span>Settings</a></li><li id="wp-admin-bar-messages" class="menupop"><a class="ab-item" aria-haspopup="true" href="<?php echo site_url(); ?>/wp-admin/edit-comments.php"><span class="ab-message ab-icon icon"></span>Messages</a></li>');
             });
             $('#add-new-user').each(function()
             {
