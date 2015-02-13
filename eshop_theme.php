@@ -4,7 +4,7 @@ Plugin Name: Woocommerce Admin Theme
 Plugin URI: http://wordpress.org/plugins/woocommerce-admin-theme-for-shop-manager/
 Description: Wordpress Admin Theme to integrate Shop Manager / Merchant Environment. just activate to use this Admin Template.
 Author: Balram Singh
-Version: 1.0
+Version: 1.0.1
 Author URI: http://balramsingh.in
 */
 // TO enque custom style sheet for admin Panel
@@ -14,9 +14,8 @@ function get_user_role() {
 $user_role = array_shift($user_roles);
 }
 
-   
 function wooadmin_my_admin_theme_style() {
-    wp_enqueue_style('my-admin-theme', plugins_url('wp-admin.css', __FILE__));
+	wp_enqueue_style('my-admin-theme', plugins_url('wp-admin.css', __FILE__));
 }
 
 add_action('admin_enqueue_scripts', 'wooadmin_my_admin_theme_style');
@@ -48,7 +47,7 @@ function wooadmin_right_admin_footer_text_output($text) {
  add_action( 'admin_head', 'wooadmin_wrap_menu_div_wpse_19814' );
 
 function wooadmin_wrap_menu_div_wpse_19814()
-{   
+{ 
     ?>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -74,7 +73,7 @@ function wooadmin_wrap_menu_div_wpse_19814()
 // Add Menu Button in Admin Bar
 
 function wooadmin_wp_fluency_admin_bar_unhide_menu() {
-    global $wp_admin_bar;
+	global $wp_admin_bar;
     ?> <span class="unique"><?php $wp_admin_bar->add_menu( array( 'id' => 'wp-eshopbox-messages-menu', 'title' => __('Messages','eshopbox-admin'), 'href' => '#abc', 'meta'=>array('class'=>'unhidden') ) );?> </span><?php
 }
 //add_action( 'wp_before_admin_bar_render', 'wooadmin_wp_fluency_admin_bar_unhide_menu');
@@ -102,8 +101,7 @@ function wooadmin_eshopbox_admin_bar() {
    
 function wooadmin_eshop_admin_logo()
 {  
-  
-     if( function_exists('get_custom_header') ){
+    if( function_exists('get_custom_header') ){
         $width = get_custom_header()->width;
         $height = get_custom_header()->height;
     } else {
